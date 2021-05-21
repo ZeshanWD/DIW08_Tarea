@@ -11,28 +11,28 @@
   <main class="container">
     <h1>Inscripción a las X Jornadas Matemáticas</h1>
     <p class="hint">Los campos señalados con * son obligatorios</p>
-    <form id="contact-form"> 
+    <form id="contact-form" action="" method="POST" name="contact-form"> 
       <fieldset id="personal_data">
          <legend>Datos personales</legend>
          <ul>
            <li class="group_fields">
               <div>
                 <label for="name">Nombre *</label>
-                <input required type="text" name="name" id="name" value="" />
+                <input placeholder="John" required type="text" name="name" id="name" value="" />
               </div>
               <div>
                 <label for="surname">Apellidos *</label>
-                <input required type="text" name="surname" id="surname" value="" />
+                <input placeholder="Doe" required type="text" name="surname" id="surname" value="" />
               </div>
             </li>
            <li class="group_fields">
             <div>
               <label for="email">Correo electrónico *</label>
-              <input required type="email" name="email" id="email" value="" />
+              <input placeholder="john@doe.com" required type="email" name="email" id="email" value="" />
             </div>
             <div>
               <label for="phone">Teléfono *</label>
-              <input required type="text" name="phone" id="phone" value="" />
+              <input placeholder="+34606034528" required type="text" name="phone" id="phone" value="" />
             </div>
           </li>
           
