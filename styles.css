@@ -70,7 +70,7 @@ ul li {
 }
 
 #profile ul li {
-  width: 100%;
+  margin: 10px;
 }
 
 #profile ul .list_work {
@@ -97,7 +97,7 @@ ul li {
 }
 
 .submit {
-  margin: 50px 0px;
+  margin: 20px 0px;
   padding: 0px 40px;
 }
 

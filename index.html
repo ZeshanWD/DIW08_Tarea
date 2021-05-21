@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
   <title>Tarea 8 DIW</title>
 </head>
 <body>
   <div class="container">
     <h1>Inscripción a las X Jornadas Matemáticas</h1>
     <p class="hint">Los campos señalados con * son obligatorios</p>
-    <form id="contact-form" method="POST"> 
+    <form id="contact-form"> 
       <fieldset id="personal_data">
          <legend>Datos personales</legend>
          <ul>
-           <div class="group_fields">
+           <li class="group_fields">
               <div>
                 <label for="name">Nombre *</label>
                 <input type="text" name="name" id="name" value="" />
@@ -24,8 +24,8 @@
                 <label for="surname">Apellidos *</label>
                 <input type="text" name="surname" id="surname" value="" />
               </div>
-           </div>
-           <div class="group_fields">
+            </li>
+           <li class="group_fields">
             <div>
               <label for="email">Correo electrónico *</label>
               <input type="text" name="email" id="email" value="" />
@@ -34,50 +34,51 @@
               <label for="phone">Teléfono *</label>
               <input type="text" name="phone" id="phone" value="" />
             </div>
-          </div>
+          </li>
           
-          <div>
+          <li>
             <p>Fotografía para la acreditación</p>
             <div class="input-file">
                 <input type="file">
             </div>
-          </div>
+          </li>
         </ul>
       </fieldset>
 
       <fieldset id="profile">
         <legend>Perfil de participante</legend>
-        <ul class="list_fields">
+        <ul>
           <li>
             <label for="about">¿Por qué estás interesado en participar? *</label><br />
             <textarea name="about" id="about" cols="60" rows="15"></textarea>
           </li>
           <li>
             <label for="work">Actividad profesional *</label><br />
-            <select class="list_work" name="work">
+            <select id="work" class="list_work" name="work">
               <option value="select" selected>Seleccione una actividad</option>
-              <option value="administrativo">Administrativo</option>
-              <option value="informatico">Informatico</option>
-              <option value="abogado">Abogado</option>
-              <option value="medico">Médico</option>
+              <option value="student_bachillerato">Estudiante de bachillerato</option>
+              <option value="student_university">Estudiante universitario</option>
+              <option value="professor_bachillerato">Profesor de bachillerato</option>
+              <option value="professor_university">Profesor universitario</option>
+              <option value="other">Otra actividad profesional</option>
             </select>
           </li>
           <li>
             <label for="workshops">En qué talleres está interesado? *</label>
             <p class="hint">Para seleccionar más de una opción, mantened pulsada la tecla Control(Windows) / Command(Mac) mientras hacéis clic a las opciones</p>
-            <select class="workshops__list" multiple size="6">
+            <select id="workshops" class="workshops__list" multiple size="6">
               <option value="select">Seleccione uno o más opciones</option>
               <option value="encript">La encriptación a lo largo de la historia</option>
               <option value="security">Seguridad Informática</option>
-              <option value="networks">Redes sociales y teoría</option>
+              <option value="networks">Redes sociales y teoría de grafos</option>
               <option value="maths">Matemáticas y azar</option>
-              <option value="math_problems">Problemas Matemáticos</option>
+              <option value="math_problems">Problemas matemáticos del milenio</option>
               <option value="prediction">La predicción del tiempo</option>
               <option value="fractals">Fractales en el aula</option>
             </select>
           </li>
           <li class="assistant">
-            <label for="assistant">Seleccione una de las tres opciones siguientes: *</label>
+            <p>Seleccione una de las tres opciones siguientes: *</p>
             <div class="assistant__option">
               <input type="radio" id="may_4_5" name="days" value="may_4_5">
               <label for="may_4_5">Asistiré los días 4 y 5 de mayo</label>
