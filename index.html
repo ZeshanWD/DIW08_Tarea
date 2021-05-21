@@ -18,21 +18,21 @@
            <li class="group_fields">
               <div>
                 <label for="name">Nombre *</label>
-                <input type="text" name="name" id="name" value="" />
+                <input required type="text" name="name" id="name" value="" />
               </div>
               <div>
                 <label for="surname">Apellidos *</label>
-                <input type="text" name="surname" id="surname" value="" />
+                <input required type="text" name="surname" id="surname" value="" />
               </div>
             </li>
            <li class="group_fields">
             <div>
               <label for="email">Correo electrónico *</label>
-              <input type="email" name="email" id="email" value="" />
+              <input required type="email" name="email" id="email" value="" />
             </div>
             <div>
               <label for="phone">Teléfono *</label>
-              <input type="text" name="phone" id="phone" value="" />
+              <input required type="text" name="phone" id="phone" value="" />
             </div>
           </li>
           
@@ -50,11 +50,11 @@
         <ul>
           <li>
             <label for="about">¿Por qué estás interesado en participar? *</label><br />
-            <textarea name="about" id="about" cols="60" rows="15"></textarea>
+            <textarea required name="about" id="about" cols="60" rows="15"></textarea>
           </li>
           <li>
             <label for="work">Actividad profesional *</label><br />
-            <select id="work" class="list_work" name="work">
+            <select id="work" class="list_work" name="work" required>
               <option value="select" selected>Seleccione una actividad</option>
               <option value="student_bachillerato">Estudiante de bachillerato</option>
               <option value="student_university">Estudiante universitario</option>
@@ -66,7 +66,7 @@
           <li>
             <label for="workshops">En qué talleres está interesado? *</label>
             <p class="hint">Para seleccionar más de una opción, mantened pulsada la tecla Control(Windows) / Command(Mac) mientras hacéis clic a las opciones</p>
-            <select id="workshops" class="workshops__list" multiple size="6">
+            <select required id="workshops" class="workshops__list" multiple size="6">
               <option value="select">Seleccione uno o más opciones</option>
               <option value="encript">La encriptación a lo largo de la historia</option>
               <option value="security">Seguridad Informática</option>
@@ -80,15 +80,15 @@
           <li class="assistant">
             <p>Seleccione una de las tres opciones siguientes: *</p>
             <div class="assistant__option">
-              <input type="radio" id="may_4_5" name="days" value="may_4_5">
+              <input required type="radio" id="may_4_5" name="days" value="may_4_5">
               <label for="may_4_5">Asistiré los días 4 y 5 de mayo</label>
             </div>
             <div class="assistant__option">
-              <input type="radio" id="may_4" name="days" value="may_4">
+              <input required type="radio" id="may_4" name="days" value="may_4">
               <label for="may_4">Asistiré solo el día 4 de mayo</label>
             </div>
             <div class="assistant__option">
-              <input type="radio" id="may_5" name="days" value="may_5">
+              <input required type="radio" id="may_5" name="days" value="may_5">
               <label for="may_5">Asistiré solo el día 5 de mayo</label>
             </div>
           </li>
@@ -96,7 +96,7 @@
       </fieldset>
 
       <div class="submit">
-        <input type="checkbox" id="accept-conditions" />
+        <input required type="checkbox" id="accept-conditions" />
         <label for="accept-conditions">He leído y acepto la política de privacidad y el aviso legal *</label>
         <br />
         <input type="submit" value="ENVIAR">

@@ -58,7 +58,7 @@ ul li {
   padding: 5px 0px;
 }
 
-#personal_data input[type="text"] {
+#personal_data input[type="text"], input[type="email"] {
   padding: 15px 15px;
   width: 200px;
 }
