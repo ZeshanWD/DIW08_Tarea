@@ -1,0 +1,113 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.container > p {
+  text-align: center;
+}
+
+legend {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.group_fields {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.group_fields div {
+  margin-right: 40px;
+}
+
+.group_fields div label {
+  display: block;
+}
+
+#personal_data {
+  margin-bottom: 36px;
+}
+
+#personal_data ul li {
+  margin: 10px;
+}
+
+#personal_data ul li label {
+  display: block;
+  padding: 5px 0px;
+}
+
+#personal_data input[type="text"] {
+  padding: 15px 15px;
+  width: 200px;
+}
+
+.input-file {
+  border: 1px solid #000;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#profile ul li {
+  width: 100%;
+}
+
+#profile ul .list_work {
+  padding: 10px;
+}
+
+#profile ul li > label {
+  display: block;
+  padding: 5px 0px;
+}
+
+.assistant__option {
+  margin: 15px 0px;
+}
+
+.workshops__list {
+  height: 150px;  
+}
+
+.hint {
+  margin: 0px;
+  font-size: 0.8em;
+  margin-bottom: 20px;
+}
+
+.submit {
+  margin: 50px 0px;
+  padding: 0px 40px;
+}
+
+.submit input {
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  background-color: yellow;
+  border: none;
+  color: black;
+  cursor: pointer;
+}

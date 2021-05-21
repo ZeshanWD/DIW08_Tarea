@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Tarea 8 DIW</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Inscripción a las X Jornadas Matemáticas</h1>
+    <p class="hint">Los campos señalados con * son obligatorios</p>
+    <form id="contact-form" method="POST"> 
+      <fieldset id="personal_data">
+         <legend>Datos personales</legend>
+         <ul>
+           <div class="group_fields">
+              <div>
+                <label for="name">Nombre *</label>
+                <input type="text" name="name" id="name" value="" />
+              </div>
+              <div>
+                <label for="surname">Apellidos *</label>
+                <input type="text" name="surname" id="surname" value="" />
+              </div>
+           </div>
+           <div class="group_fields">
+            <div>
+              <label for="email">Correo electrónico *</label>
+              <input type="text" name="email" id="email" value="" />
+            </div>
+            <div>
+              <label for="phone">Teléfono *</label>
+              <input type="text" name="phone" id="phone" value="" />
+            </div>
+          </div>
+          
+          <div>
+            <p>Fotografía para la acreditación</p>
+            <div class="input-file">
+                <input type="file">
+            </div>
+          </div>
+        </ul>
+      </fieldset>
+
+      <fieldset id="profile">
+        <legend>Perfil de participante</legend>
+        <ul class="list_fields">
+          <li>
+            <label for="about">¿Por qué estás interesado en participar? *</label><br />
+            <textarea name="about" id="about" cols="60" rows="15"></textarea>
+          </li>
+          <li>
+            <label for="work">Actividad profesional *</label><br />
+            <select class="list_work" name="work">
+              <option value="select" selected>Seleccione una actividad</option>
+              <option value="administrativo">Administrativo</option>
+              <option value="informatico">Informatico</option>
+              <option value="abogado">Abogado</option>
+              <option value="medico">Médico</option>
+            </select>
+          </li>
+          <li>
+            <label for="workshops">En qué talleres está interesado? *</label>
+            <p class="hint">Para seleccionar más de una opción, mantened pulsada la tecla Control(Windows) / Command(Mac) mientras hacéis clic a las opciones</p>
+            <select class="workshops__list" multiple size="6">
+              <option value="select">Seleccione uno o más opciones</option>
+              <option value="encript">La encriptación a lo largo de la historia</option>
+              <option value="security">Seguridad Informática</option>
+              <option value="networks">Redes sociales y teoría</option>
+              <option value="maths">Matemáticas y azar</option>
+              <option value="math_problems">Problemas Matemáticos</option>
+              <option value="prediction">La predicción del tiempo</option>
+              <option value="fractals">Fractales en el aula</option>
+            </select>
+          </li>
+          <li class="assistant">
+            <label for="assistant">Seleccione una de las tres opciones siguientes: *</label>
+            <div class="assistant__option">
+              <input type="radio" id="may_4_5" name="days" value="may_4_5">
+              <label for="may_4_5">Asistiré los días 4 y 5 de mayo</label>
+            </div>
+            <div class="assistant__option">
+              <input type="radio" id="may_4" name="days" value="may_4">
+              <label for="may_4">Asistiré solo el día 4 de mayo</label>
+            </div>
+            <div class="assistant__option">
+              <input type="radio" id="may_5" name="days" value="may_5">
+              <label for="may_5">Asistiré solo el día 5 de mayo</label>
+            </div>
+          </li>
+        </ul>
+      </fieldset>
+
+      <div class="submit">
+        <input type="checkbox" id="accept-conditions" />
+        <label for="accept-conditions">He leído y acepto la política de privacidad y el aviso legal *</label>
+        <br />
+        <input type="submit" value="ENVIAR">
+      </div>
+   </form>
+  </div>
+</body>
+</html>
